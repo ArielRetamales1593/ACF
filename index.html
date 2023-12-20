@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TRAINEE</title>
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <div class="infoLogo">
+          <h2>Ariel Retamales</h2>
+          <p class="des">Desarrollador web</p>
+        </div>
+        <img src="./assets/atare2.png" alt="Logo Image" />
+      </div>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Solutions</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="contBanner">
+        <img class="foto1" width="800px" src="./assets/pc.jpg" alt="" />
+        <div class="contTitulo">
+          <h1 class="titulo">ADVANCE CUSTOM FIELD</h1>
+          <p class="infoTitulo">Wordpress Plugin</p>
+        </div>
+      </section>
+
+      <section class="info1">
+        <h2>¿Qué es Advanced Custom Fields (ACF)?</h2>
+        <p>
+          Advanced Custom Fields (ACF) es un plugin para WordPress que te
+          permite agregar campos personalizados de manera sencilla a tus
+          entradas, páginas y tipos de contenido personalizado. Con ACF, puedes
+          crear y gestionar fácilmente campos como texto, imágenes, enlaces y
+          más, proporcionando una forma flexible de estructurar la información
+          en tu sitio
+        </p>
+        <h2>¿Por qué se utiliza ACF?</h2>
+        <p>
+          ACF es utilizado para mejorar la capacidad de personalización de
+          WordPress. Permite a los desarrolladores y usuarios agregar
+          información específica y estructurada a sus contenidos sin necesidad
+          de conocimientos de programación avanzados. Con ACF, puedes crear
+          campos adicionales que se adapten a tus necesidades, lo que facilita
+          la creación de sitios web más dinámicos y ricos en contenido.
+        </p>
+      </section>
+
+      <h2 class="titulo2">CAPACIDADES CLAVES DE ACF</h2>
+      <section class="card">
+        <div class="cardItem">
+          <img width="300px" src="./assets/foto2.jpg" alt="" />
+          <h3>Creación de Campos Personalizados</h3>
+          <p class="infoCard">
+            ACF permite definir campos personalizados según tus requerimientos,
+            como campos de texto, editor de texto, imágenes, selección de
+            fechas, etc.
+          </p>
+        </div>
+        <div class="cardItem">
+          <img width="300px" src="./assets/foto3.jpg" alt="" />
+          <h3>Integración en Plantillas</h3>
+          <p class="infoCard">
+            Facilita la integración de estos campos en tus plantillas de página,
+            asegurando una presentación coherente y estructurada.
+          </p>
+        </div>
+        <div class="cardItem">
+          <img width="300px" src="./assets/foto4.jpg" alt="" />
+          <h3>Flexibilidad</h3>
+          <p class="infoCard">
+            ACF es altamente configurable y se integra perfectamente con la
+            interfaz de administración de WordPress, lo que facilita la gestión
+            y edición de campos personalizados.
+          </p>
+        </div>
+      </section>
+      <section>
+        <article>
+          <h2>Mi Experiencia Desarrollando con WordPress y Laragon</h2>
+          <p>
+            ¡Bienvenidos a mi presentación sobre el plugin de WordPress. Mi
+            nombre es <strong> Ariel Retamales</strong> y les contaré acerca de
+            mi elección de tecnologías, experiencias previas y cómo esta
+            combinación facilitó el desarrollo de mi proyecto. 
+
+            <ol>
+
+              <li class="pasos">
+               <p>Elegí Laragon debido a que ya lo habia utilizado en otros proyectos, conozco sus
+                principales funciones y caracteristicas por lo que fue sencillo
+                instalar Wordpress de manera local.
+                Una vez con WordPress en local instalé el plugin(Advanced Custom Field) siguiendo todas las indicaciones que aparecian en la página del plugin, el proceso fue rapido y sin ningún problema.(hasta el momento)</p>
+              <img width="600px" src="./assets/1223.JPG" alt="">
+              <img width="700px" src="./assets/1333.JPG" alt="">
+              </li>
+
+
+              <li class="pasos">
+                <p>Cree los campos solicitados y los agregué a la sección de página, al editar este componente  pude ver los campos incluidos (Campo de texto y un editor de texto) y por el momento todo marchaba bien.  </p>
+                <p class="wy">***Editor WYSIWYG (del inglés "What You See Is What You Get", que significa "lo que se ve es lo que se obtiene") es un tipo de editor HTML que permite modificar la página web en una vista simplificada sin código similar al diseño de página real</p>
+               <img width="800px" src="./assets/1340.JPG" alt="">
+               <p>Al intentar visualizar estos campos en el front es donde se presentó el mayor problema. Por lo que leí en internet y ví en algunos tutoriales la forma de incluir los campos era a través de una función llamada "get_field", esta función se incluye en el archivo "principal" por lo general este archivo lleva como nombre "single.php o home.php".Sin embargo debido a que cada tema se forma con estructuras diferentes se me hizo complejo encontrar este archivo. 
+                En algunos temas encontré un archivo llamado index.php , sin embargo se encontraba vacio y con un mensaje "silence is golden" por lo que entendí es un archivo el cual no se debe modificar. 
+                </p>
+               <img width="700px" src="./assets/1350.JPG" alt="">
+               </li>
+
+               <li class="pasos">
+                <p>La solucion : Al no tener ese archivo de referencia tuve que crear una plantilla a la que llamé template-custom.php.Luego creé una nueva página en WordPress y le asigné esa plantilla, luego agregué la función dentro de ese archivo y por fin pude visualizar los campos en el front.  </p>
+               <img width="800px" src="./assets/1360.JPG" alt="">
+               <p>Al intentar visualizar estos campos en el front es donde se presentó el mayor problema. Por lo que leí en internet y ví en algunos tutoriales la forma de incluir los campos era a través de una función llamada "get_field", esta función se incluye en el archivo "principal" por lo general este archivo lleva como nombre "single.php o home.php".Sin embargo debido a que cada tema se forma con estructuras diferentes se me hizo complejo encontrar este archivo. 
+                En algunos temas encontré un archivo llamado index.php , sin embargo se encontraba vacio y con un mensaje "silence is golden" por lo que entendí es un archivo el cual no se debe modificar. 
+                </p>
+               <img width="700px" src="./assets/1370.JPG" alt="">
+               </li>
+
+
+               <li class="pasos">
+                
+              <p>Se logró !, ahora toca crear un archivo en css y referenciarlo en el archivo php para poder editarlo.</p>
+               <img width="900px" src="./assets/1380.JPG" alt="">
+               </li>
+               
+               <li class="pasos">
+                
+               <h3>Resultado Final</h3>
+                 <img width="900px" src="./assets/1380.JPG" alt="">
+                 </li>
+              
+                 <li class="pasos">
+                
+                  <h3>Reflexiones Finales</h3>
+                    <img width="900px" src="./assets/1380.JPG" alt="">
+                    </li>
+              </ol>
+            </ol>
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <script src="nav.js"></script>
+  </body>
+</html>
