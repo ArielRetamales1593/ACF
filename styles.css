@@ -18,7 +18,6 @@ nav {
   display: flex;
 
   background-color: black;
-  margin-bottom: 2rem;
 }
 
 /*Styling logo*/
@@ -31,6 +30,15 @@ nav {
   gap: 20px;
 }
 
+span {
+  font-weight: 700;
+  color: #131418;
+}
+
+.titulo:hover .y {
+  color: #c4b9ad;
+  transform: scale(1);
+}
 .logo img {
   width: 100px;
   margin-top: 0;
@@ -41,7 +49,13 @@ nav {
 }
 .foto1 {
   border-radius: 100%;
-  width: 500px;
+  width: 400px;
+  border: solid white 15px;
+  transition: 2s;
+}
+
+.foto1:hover {
+  border: solid black 15px;
 }
 
 .infoLogo {
@@ -100,6 +114,7 @@ h3 {
 .card div img {
   border-radius: 50%;
   transition: 2s;
+  border: solid 5px white;
 }
 
 .card div img:hover {
@@ -208,11 +223,15 @@ p {
 }
 .contBanner {
   display: flex;
-  margin-top: 4rem;
+
   width: 100%;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  background-image: url(./assets/fondo2.jpg);
+  background-repeat: repeatl;
+  background-size: 10%;
+  padding: 2rem;
 }
 
 .contTitulo {
@@ -227,7 +246,7 @@ p {
   color: white;
 }
 .infoTitulo {
-  font-size: 3rem;
+  font-size: 1.6rem;
   color: black;
 }
 /*Stying for small screens*/
