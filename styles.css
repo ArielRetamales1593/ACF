@@ -10,23 +10,44 @@ body {
   background-color: #c4b9ad;
   overflow-x: hidden;
 }
+
+.fariel {
+  border-radius: 40%;
+  border: solid white 5px;
+}
+.pres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem;
+}
 nav {
   height: 6rem;
   width: 100vw;
 
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: black;
+}
+
+article {
+  margin: 5rem;
+}
+p {
+  text-align: justify;
 }
 
 /*Styling logo*/
 
 .logo {
   display: flex;
-  flex-direction: row-reverse;
+
+  justify-content: center;
   align-items: center;
-  width: 600px;
+  width: 100%;
   gap: 20px;
 }
 
@@ -40,12 +61,12 @@ span {
   transform: scale(1);
 }
 .logo img {
-  width: 100px;
+  width: 70px;
   margin-top: 0;
-  border-radius: 80%;
 }
 .des {
   color: #dbd4cd;
+  font-size: 1rem;
 }
 .foto1 {
   border-radius: 100%;
@@ -62,6 +83,9 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.ariel {
+  font-size: 1.4rem;
 }
 h2 {
   font-size: 2.3rem;
@@ -106,15 +130,28 @@ h3 {
   font-size: 1rem;
 }
 .pasos {
-  list-style: numeric;
+  list-style: square;
   font-size: 1.4rem;
   margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.pasos img {
+  border: ridge black 10px;
 }
 
 .card div img {
   border-radius: 50%;
   transition: 2s;
   border: solid 5px white;
+}
+.titulo3 {
+  text-align: center;
+  color: black;
+  font-weight: 400;
 }
 
 .card div img:hover {

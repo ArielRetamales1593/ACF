@@ -19,28 +19,22 @@
     <nav>
       <div class="logo">
         <div class="infoLogo">
-          <h2>Ariel Retamales</h2>
+          <h2 class="ariel">Ariel Retamales</h2>
           <p class="des">Desarrollador web</p>
         </div>
         <img src="./assets/atare2.png" alt="Logo Image" />
       </div>
-      <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Solutions</a></li>
-      </ul>
     </nav>
 
     <main>
       <section class="contBanner">
         <img class="foto1" width="600px" src="./assets/pc.jpg" alt="" />
         <div class="contTitulo">
-          <h1 class="titulo"><span class="y">A</span>DVANCE <span class="y">C</span>USTOM <span class="y">F</span>IELD</h1>
-          <p class="infoTitulo">Wordpress Plugin</p>
+          <h1 class="titulo">
+            <span class="y">A</span>DVANCE <span class="y">C</span>USTOM
+            <span class="y">F</span>IELD
+          </h1>
+          <p class="infoTitulo">WordPress Plugin</p>
         </div>
       </section>
 
@@ -52,11 +46,11 @@
           entradas, páginas y tipos de contenido personalizado. Con ACF, puedes
           crear y gestionar fácilmente campos como texto, imágenes, enlaces y
           más, proporcionando una forma flexible de estructurar la información
-          en tu sitio
+          en tu sitio.
         </p>
         <h2>¿Por qué se utiliza ACF?</h2>
         <p>
-          ACF es utilizado para mejorar la capacidad de personalización de
+          ACF se utiliza para mejorar la capacidad de personalización de
           WordPress. Permite a los desarrolladores y usuarios agregar
           información específica y estructurada a sus contenidos sin necesidad
           de conocimientos de programación avanzados. Con ACF, puedes crear
@@ -65,7 +59,7 @@
         </p>
       </section>
 
-      <h2 class="titulo2">CAPACIDADES CLAVES DE ACF</h2>
+      <h2 class="titulo2">Capacidades Claves</h2>
       <section class="card">
         <div class="cardItem">
           <img width="300px" src="./assets/foto2.jpg" alt="" />
@@ -94,69 +88,105 @@
           </p>
         </div>
       </section>
-      <section>
-        <article>
-          <h2>Mi Experiencia Desarrollando con WordPress y Laragon</h2>
-          <p>
-            ¡Bienvenidos a mi presentación sobre el plugin de WordPress. Mi
-            nombre es <strong> Ariel Retamales</strong> y les contaré acerca de
-            mi elección de tecnologías, experiencias previas y cómo esta
-            combinación facilitó el desarrollo de mi proyecto. 
 
-            <ol>
+      <article>
+        <h2>Mi Proceso</h2>
+        <div class="pres">
+          <h3 class="titulo3">
+            ¡Bienvenidos! Mi nombre es <strong>Ariel Retamales</strong>, y les
+            contaré acerca de mi proceso, aprendizaje y experiencia utilizando
+            ACF.
+          </h3>
+          <img class="fariel" width="150px" src="./assets/ariel.jpg" alt="" />
+        </div>
 
-              <li class="pasos">
-               <p>Elegí Laragon debido a que ya lo habia utilizado en otros proyectos, conozco sus
-                principales funciones y caracteristicas por lo que fue sencillo
-                instalar Wordpress de manera local.
-                Una vez con WordPress en local instalé el plugin(Advanced Custom Field) siguiendo todas las indicaciones que aparecian en la página del plugin, el proceso fue rapido y sin ningún problema.(hasta el momento)</p>
-              <img width="600px" src="./assets/1223.JPG" alt="">
-              <img width="700px" src="./assets/1333.JPG" alt="">
-              </li>
+        <ol>
+          <li class="pasos">
+            <p>
+              Elegí Laragon debido a que ya lo había utilizado en otros
+              proyectos; conozco sus principales funciones y características,
+              por lo que fue sencillo instalar WordPress de manera local. Una
+              vez con WordPress en local, instalé el plugin (Advanced Custom
+              Field) siguiendo todas las indicaciones que aparecían en la página
+              del plugin; el proceso fue rápido y sin ningún problema (hasta el
+              momento).
+            </p>
+            <img width="600px" src="./assets/1223.JPG" alt="" />
+            <img width="700px" src="./assets/1333.JPG" alt="" />
+          </li>
 
+          <li class="pasos">
+            <p>
+              Creé los campos solicitados y los agregué a la sección de página;
+              al editar este componente, pude ver los campos incluidos (Campo de
+              texto y un editor de texto), y por el momento todo marchaba bien.
+            </p>
+            <p class="wy">
+              ***Editor WYSIWYG (del inglés "What You See Is What You Get", que
+              significa "lo que se ve es lo que se obtiene") es un tipo de
+              editor HTML que permite modificar la página web en una vista
+              simplificada sin código, similar al diseño de página real.
+            </p>
+            <img width="800px" src="./assets/1340.JPG" alt="" />
+            <p>
+              Al intentar visualizar estos campos en el front es donde se
+              presentó el mayor problema. Por lo que leí en internet y vi en
+              algunos tutoriales, la forma de incluir los campos era a través de
+              una función llamada "get_field"; esta función se incluye en el
+              archivo "principal", por lo general, este archivo lleva como
+              nombre "single.php o home.php". Sin embargo, debido a que cada
+              tema se forma con estructuras diferentes, se me hizo complejo
+              encontrar este archivo. En algunos temas encontré un archivo
+              llamado index.php, pero, se encontraba vacío y con un mensaje
+              "silence is golden", por lo que entendí que es un archivo el cual
+              no se debe modificar.
+            </p>
+            <img width="700px" src="./assets/1350.JPG" alt="" />
+          </li>
 
-              <li class="pasos">
-                <p>Cree los campos solicitados y los agregué a la sección de página, al editar este componente  pude ver los campos incluidos (Campo de texto y un editor de texto) y por el momento todo marchaba bien.  </p>
-                <p class="wy">***Editor WYSIWYG (del inglés "What You See Is What You Get", que significa "lo que se ve es lo que se obtiene") es un tipo de editor HTML que permite modificar la página web en una vista simplificada sin código similar al diseño de página real</p>
-               <img width="800px" src="./assets/1340.JPG" alt="">
-               <p>Al intentar visualizar estos campos en el front es donde se presentó el mayor problema. Por lo que leí en internet y ví en algunos tutoriales la forma de incluir los campos era a través de una función llamada "get_field", esta función se incluye en el archivo "principal" por lo general este archivo lleva como nombre "single.php o home.php".Sin embargo debido a que cada tema se forma con estructuras diferentes se me hizo complejo encontrar este archivo. 
-                En algunos temas encontré un archivo llamado index.php , sin embargo se encontraba vacio y con un mensaje "silence is golden" por lo que entendí es un archivo el cual no se debe modificar. 
-                </p>
-               <img width="700px" src="./assets/1350.JPG" alt="">
-               </li>
+          <li class="pasos">
+            <p>
+              La solución: Al no tener ese archivo de referencia, tuve que crear
+              una plantilla a la que llamé template-custom.php. Luego creé una
+              nueva página en WordPress y le asigné esa plantilla; luego agregué
+              la función dentro de ese archivo y, por fin, pude visualizar los
+              campos en el front.
+            </p>
+            <img width="800px" src="./assets/1360.JPG" alt="" />
+          </li>
 
-               <li class="pasos">
-                <p>La solucion : Al no tener ese archivo de referencia tuve que crear una plantilla a la que llamé template-custom.php.Luego creé una nueva página en WordPress y le asigné esa plantilla, luego agregué la función dentro de ese archivo y por fin pude visualizar los campos en el front.  </p>
-               <img width="800px" src="./assets/1360.JPG" alt="">
-               <p>Al intentar visualizar estos campos en el front es donde se presentó el mayor problema. Por lo que leí en internet y ví en algunos tutoriales la forma de incluir los campos era a través de una función llamada "get_field", esta función se incluye en el archivo "principal" por lo general este archivo lleva como nombre "single.php o home.php".Sin embargo debido a que cada tema se forma con estructuras diferentes se me hizo complejo encontrar este archivo. 
-                En algunos temas encontré un archivo llamado index.php , sin embargo se encontraba vacio y con un mensaje "silence is golden" por lo que entendí es un archivo el cual no se debe modificar. 
-                </p>
-               <img width="700px" src="./assets/1370.JPG" alt="">
-               </li>
+          <li class="pasos">
+            <p>
+              ¡Se logró! Ahora toca crear un archivo en CSS y referenciarlo en
+              el archivo PHP para poder editarlo.
+            </p>
+            <img width="900px" src="./assets/1390.JPG" alt="" />
+          </li>
 
+          <li class="pasos">
+            <h2>Resultado Final</h2>
+            <p>
+              Pensé esta plantilla como el resultado de un cuestionario, además
+              agregué un campo adicional (email) a través de ACF
+            </p>
+            <img width="1000px" src="./assets/videoi.gif" alt="" />
+          </li>
 
-               <li class="pasos">
-                
-              <p>Se logró !, ahora toca crear un archivo en css y referenciarlo en el archivo php para poder editarlo.</p>
-               <img width="900px" src="./assets/1380.JPG" alt="">
-               </li>
-               
-               <li class="pasos">
-                
-               <h3>Resultado Final</h3>
-                 <img width="900px" src="./assets/1380.JPG" alt="">
-                 </li>
-              
-                 <li class="pasos">
-                
-                  <h3>Reflexiones Finales</h3>
-                    <img width="900px" src="./assets/1380.JPG" alt="">
-                    </li>
-              </ol>
-            </ol>
-          </p>
-        </article>
-      </section>
+          <li class="pasos">
+            <h2>Reflexiones Finales</h2>
+            <p>
+              A mi parecer creo que ACF es una herramienta bastante poderosa y
+              útil, permite un desarrollo rápido y sencillo. El proceso de
+              instalación es bastante simple y amigable. En un comienzo me costó
+              entender en qué situaciones se utilizaba y de qué forma mostrar
+              los campos en el front (sin duda fue la parte que más me costó
+              entender). A medida que iba interactuando con el plugin comprendí
+              rápidamente que a veces WordPress no es flexible al personalizar
+              campos y este plugin lo soluciona.
+            </p>
+          </li>
+        </ol>
+      </article>
     </main>
 
     <script src="nav.js"></script>
