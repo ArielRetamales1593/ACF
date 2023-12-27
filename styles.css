@@ -419,6 +419,7 @@ p {
   background-repeat: repeat;
   color: black;
 }
+
 .item {
   display: flex;
   background-image: url(./assets/fondo2.jpg);
